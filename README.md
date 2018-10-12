@@ -1,2 +1,0 @@
-# Ionic
-lista con evento
