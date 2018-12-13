@@ -1,0 +1,35 @@
+          /* $table->integer('id');
+            $table->string('name',50);
+            $table->string('apellido',50);
+            $table->integer('telefono');
+            $table->string('correoelectronico',50);
+            $table->integer('id_tipovinculacion')->unsigned();
+            $table->foreign('id_tipovinculacion')->references('id')->on('tipovinculaciones');
+            $table->date('fechadenacimiento');
+            $table->double('salario');
+            $table->integer('id_cargo')->unsigned();
+            $table->foreign('id_cargo')->references('id')->on('cargos'); 
+            $table->integer('id_sede')->unsigned();
+            $table->foreign('id_sede')->references('id')->on('sedes');
+            $table->date('fechadeingreso');
+            $table->integer('id_genero')->unsigend();
+            $table->foreign('id_genero')->references('id')->on('generos');   
+            $table->enum('estado',['activo','inactivo']); 
+            $table->timestamps();
+            $table->unique('id');*/
+
+
+            $table->increments('id');
+            $table->date('fecha_registro');
+            $table->integer('id_empleado')->unsigned();
+            $table->foreign('id_empleado')->references('id')->on('empleados');
+            $table->integer('id_tipoausentismo')->unsigned();
+            $table->foreign('id_tipoausentismo')->references('id')->on('id_tipoausentismos');            
+            $table->text('area', 100);
+            $table->date('fecha_inicio');
+            $table->timestamp('tiempo_ausencia');
+            $table->enum('grado',['leve','severo']);
+            $table->text('observacion',100);
+
+            
+            $table->timestamps();

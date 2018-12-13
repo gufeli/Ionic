@@ -1,0 +1,26 @@
+Compilar todos mis plugins js y css en un solo archivo
+para las plantillas
+
+1.muevo mis archivos css y js a la carpeta resources
+assets , creamos una carpeta llamada plantilla y dentro creamos una para cada componente('js,css')
+y pegamos los componentes.
+
+2.documentacion laravel en la parte frontend, compiling Assets
+en la seccion plain css , copiamos el codigo de ejemplo
+
+3.En nuestro proyecto vamos al archivo webpack.mix.js y
+pegamos nuestro ejemplo remplazando el codigo que ya estaba
+y le cambiamos las rutas.
+
+4. En ese mismo archivo cambiamos el nombre de nuestro archivo
+resultante de la ultima linea.
+
+5.Hacer  lo mismo con los js en documentacion laravel vanilla js
+
+6. tener nodejs y npm instalado
+
+7.instalar laravel mix, instalando npm con sus dependencias: npm install (en el cmd)
+
+8.Esperar que se instalen todas las dependencias.
+
+9.Ejecutar Laravel mix ejecutando el comando (npm run dev) y se crean los archivos
